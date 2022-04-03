@@ -1,3 +1,66 @@
-h1 {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #ffffff;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Font/Montserrat-Medium.ttf) format(turetype);
+}
+
+li,
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header {
+    background: hsl(24, 100%, 41%);
+    backdrop-filter: blur(1em);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
+
+.nav {
+    background: rgb(221, 101, 57);
+    list-style-type: none;
+}
+
+.nav li {
+    background: rgb(221, 101, 57);
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav li a {
+    background: rgb(221, 101, 57);
+    transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+    background: rgb(221, 101, 57);
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
 }

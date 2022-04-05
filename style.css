@@ -22,7 +22,7 @@ a {
 
 header {
     background: hsl(39, 100%, 53%);
-    backdrop-filter: blur(1em);
+    backdrop-filter: blur(1rem);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -65,12 +65,6 @@ header {
     cursor: pointer;
 }
 
-.Color {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
 .herobg {
     width: 100vw;
     height: 100vh;
@@ -80,4 +74,55 @@ header {
     width: 100%;
     height: auto;
     opacity: 0.4; */
+}
+
+.stream {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: large;
+    margin: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clear floats after image containers */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.achivement {
+    text-align: center;
+}
+
+.achivement .achieve {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.achivement .laterpart {
+    font: bold;
+    font-family: 'Montserrat', sans-serif;
 }

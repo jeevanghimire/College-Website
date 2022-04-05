@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -125,4 +128,11 @@ header {
 .achivement .laterpart {
     font: bold;
     font-family: 'Montserrat', sans-serif;
+}
+
+.facility .achieve {
+    padding: 20%;
+    font: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }

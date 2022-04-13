@@ -1,138 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    background-color: #ffffff;
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url(Font/Montserrat-Medium.ttf) format(turetype);
-}
-
-li,
-a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    color: aliceblue;
-}
-
-header {
-    background: hsl(39, 100%, 53%);
-    backdrop-filter: blur(1rem);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 5%;
-}
-
-.logo {
-    cursor: pointer;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: auto;
-}
-
-.nav {
-    background: rgb(255, 182, 74);
-    list-style-type: none;
-}
-
-.nav li {
-    background: rgb(255, 182, 74);
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav li a {
-    background: rgb(255, 182, 74);
-    transition: all 0.3s ease 0s;
-}
-
-.nav li a:hover {
-    background: rgb(255, 182, 74);
-    color: rgb(255, 255, 255);
-}
-
-.menu {
-    margin-left: auto;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-}
-
-.herobg {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(.4);
-    /* object-fit: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        background-color: #ffffff;
+    }
+    
+    @font-face {
+        font-family: Montserrat;
+        src: url(Font/Montserrat-Medium.ttf) format(turetype);
+    }
+    
+    li,
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    header {
+        background: hsl(39, 100%, 53%);
+        backdrop-filter: blur(1rem);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 5%;
+    }
+    
+    .logo {
+        cursor: pointer;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-right: auto;
+    }
+    
+    .nav {
+        background: rgb(255, 182, 74);
+        list-style-type: none;
+    }
+    
+    .nav li {
+        background: rgb(255, 182, 74);
+        display: inline-block;
+        padding: 0 20px;
+    }
+    
+    .nav li a {
+        background: rgb(255, 182, 74);
+        transition: all 0.3s ease 0s;
+    }
+    
+    .nav li a:hover {
+        background: rgb(255, 182, 74);
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu {
+        margin-left: auto;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    
+    .herobg {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(.4);
+        /* object-fit: cover;
     width: 100%;
     height: auto;
     opacity: 0.4; */
-}
-
-.stream {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: large;
-    margin: 10px;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-
-/* Clear floats after image containers */
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
     }
-}
-
-.achivement {
-    text-align: center;
-}
-
-.achivement .achieve {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-
-.achivement .laterpart {
-    font: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.facility .achieve {
-    padding: 20%;
-    font: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-}
+    
+    .stream {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: large;
+        margin: 10px;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    /* Clear floats after image containers */
+    
+    .main::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .main {
+        display: flex;
+    }
+    
+    .arrange {
+        flex: 33.33%;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    
+    @media screen and (max-width: 500px) {
+        .arrange {
+            width: 100%;
+        }
+    }
+    
+    .achivement {
+        text-align: center;
+    }
+    
+    .achivement .achieve {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    
+    .achivement .laterpart {
+        font: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .facility .achieve {
+        padding: 20%;
+        font: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    .testomonial .proudof {
+        text-align: center;
+        font-family: 'Montserat', sans-serif;
+        font-weight: 510;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+        border-radius: 50%;
+    }
